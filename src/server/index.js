@@ -2,6 +2,7 @@ const express = require("express");
 const path = require("path");
 const bodyParser = require("body-parser");
 const cors = require("cors");
+const { allowCrossDomain } = require("./middleware/cors");
 
 const { apiRouter } = require("./rouets/api");
 const { apiGetPrsRouter } = require("./rouets/get-prs");
@@ -13,7 +14,9 @@ const PORT = process.env.PORT || 8000;
 const app = express();
 
 app.use(cors());
-app.options('*', cors());
+app.options("*", cors());
+app.use(allowCrossDomain);
+
 app.use(express.static(path.resolve(__dirname, "../client/build")));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
