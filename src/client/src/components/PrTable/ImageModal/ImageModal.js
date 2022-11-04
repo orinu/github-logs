@@ -18,7 +18,7 @@ function ImageModal({ prIdImageModal, setPrIdImageModalOpen }) {
       <Modal.Content image id="content">
         <Image
           size="large"
-          src={`http://localhost:8000/api/pic/${prIdImageModal}`}
+          src={`http://0.0.0.0:8000/api/pic/${prIdImageModal}`}
           wrapped
           id="image-modal"
         />
