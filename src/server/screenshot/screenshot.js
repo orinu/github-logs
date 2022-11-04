@@ -1,4 +1,5 @@
 puppeteer = require("puppeteer");
+const path = require("path");
 
 const takeScreenshot = async (url, id) => {
   try {
@@ -13,7 +14,7 @@ const takeScreenshot = async (url, id) => {
       networkIdleTimeout: 1000 * 3,
     });
     await page.screenshot({
-      path: `./src/server/screenshot/images/${id}.png`,
+      path: path.resolve(__dirname, `./images/${id}.png`),
       fullPage: true,
     });
     await browser.close();
