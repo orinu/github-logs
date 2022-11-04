@@ -10,7 +10,7 @@ const TableExamplePagination = () => {
 
   // get data
   const getData = async () => {
-    const res = await axios.get("http://0.0.0.0:8000/api");
+    const res = await axios.get("http://18.212.191.208/api");
     setPrs(res.data);
   };
 
