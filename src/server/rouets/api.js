@@ -6,7 +6,7 @@ const mail = new SendMail();
 
 const router = express.Router();
 
-const ActionChangePrData = ["opened", "reopened", "reopened"];
+const ActionChangePrData = ["opened", "reopened", "closed"];
 
 router.post("/api", async (req, res) => {
   const { action } = req.body;
