@@ -1,0 +1,21 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node src/server/index.js",
+    "dev": "nodemon src/server/index.js",
+    "build": "cd src/client && npm install && npm run build"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2",
+    "mongoose": "^6.7.0",
+    "nodemailer": "^6.8.0",
+    "puppeteer": "^19.2.0"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.3"
+  }
+}
