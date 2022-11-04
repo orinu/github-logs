@@ -1,0 +1,16 @@
+#modal-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+#modal-pr{
+  width: 40%;
+}
+
+#content{
+  width: 100%;
+}
+
+#image-modal{
+  width: 100%;
+}

@@ -1,0 +1,16 @@
+.table-container {
+  padding: 20px;
+  padding-top: 35px;
+}
+
+ #header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-bottom: 25px;
+ }
+
+ #table-button {
+   display: flex;
+  justify-content: center;
+ }
